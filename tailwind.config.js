@@ -4,17 +4,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'color-primary': '#34bf49',
-        'color-secndary': '#2d465e',
-        'text-color': '#e1e1e2',
-        'color-white-bold': '#f3f4f4',
-        'color-border': '#f2f2f2',
-        'color-white-ass': '#cdcfcf',
+        'color-primary': '#e84545',
+        'color-secndary': '#fef5f5',
+        'color-orange-ass': '#f8c7c7',
+        'color-border-ass': '#e8e9e9',
+        'text-heading': '#535559',
+        'color-nav': '#8e8a87',
+        'color-pra': '#424448',
+        'color-border': '#eceded',
+        'color-white-ass': '#f9f9f9',
+        'color-black-ass': '#636669',
         'color-white-black': '#eaebec',
+        'color-ass': '#b7b6b5',
       },
       fontFamily : {
-        'font-roboto': 'Roboto',
-        'font-lato': 'lato',
+        'font-nav': "Poppins",
+        'font-heading': 'Montserrat',
+        'font-text': 'Open Sans',
       }
     },
     container : {
