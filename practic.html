@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="">
+        <nav class="relative px-3 z-10 bg-transparent flex justify-between items-center">
+            <div class="text-white py-8">
+                <a href="#home" class="font-font-heading text-2xl font-semibold">
+                    Append <span class="text-color-primary">.</span>
+                </a>
+            </div>
+            <div class="">
+                <ul class="hidden text-white font-font-nav font-normal text-base lg:flex items-center space-x-6">
+                    <li><a class="hover:text-color-nav ease-in duration-200" href="#home">Home</a></li>
+                    <li><a class="hover:text-color-nav ease-in duration-200" href="#home">About</a></li>
+                    <li><a class="hover:text-color-nav ease-in duration-200" href="#home">Servies</a></li>
+                    <li><a class="hover:text-color-nav ease-in duration-200" href="#home">Portfolio</a></li>
+                    <li><a class="hover:text-color-nav ease-in duration-200" href="#home">Team</a></li>
+                    <li><a class="hover:text-color-nav ease-in duration-200" href="#home">Blog</a></li>
+                    <li><a class="hover:text-color-nav ease-in duration-200" href="#home">   
+                           Dropdown
+                           <sub style="vertical-align: super;font-size: smaller;"
+                                class=""><i class="fa-solid fa-chevron-down font-light font-font-lato ml-1"></i>
+                           </sub>
+                        </a>
+                    </li>
+                    <li><a class="hover:text-color-nav ease-in duration-200" href="#home">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="hidden lg:block px-6 py-2 duration-200 rounded bg-color-primary hover:bg-opacity-75">
+                <button class="text-white">
+                    Get Started
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="menuber" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars text-xl text-white"></i>
+            </div>
+
+            <div id="menu" class="hidden bg-white rounded-xl shadow-lg h-[600px] absolute top-20 inset-0">
+                <ul class="container font-font-lato h-full flex flex-col gap-4 py-5 ">
+                    <li><a id="hlink" class="hover:text-color-nav ease-in duration-200" href="#home">Home</a></li>
+                    <li><a id="hlink" class="hover:text-color-nav ease-in duration-200" href="#home">About</a></li>
+                    <li><a id="hlink" class="hover:text-color-nav ease-in duration-200" href="#home">Servies</a></li>
+                    <li><a id="hlink" class="hover:text-color-nav ease-in duration-200" href="#home">Portfolio</a></li>
+                    <li><a id="hlink" class="hover:text-color-nav ease-in duration-200" href="#home">Team</a></li>
+                    <li><a id="hlink" class="hover:text-color-nav ease-in duration-200" href="#home">Blog</a></li>
+                    <li><a id="hlink" class="hover:text-color-nav ease-in duration-200 flex items-center justify-between" href="#home">   
+                           Dropdown
+                           <sub style="vertical-align: super;font-size: smaller;"
+                                class="size-10 rounded-full bg-[#e6f3e8] flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-down font-light font-font-lato"></i>
+                           </sub>
+                        </a>
+                    </li>
+                    <li><a id="hlink" class="hover:text-color-nav ease-in duration-200" href="#home">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+
+        <section>
+            <!-- Img -->
+            <div class="relative w-full h-[730px] -top-24 bg-cover bg-center" style="background-image: url(./img/hero-bg.jpg);">
+                <div class="bg-black absolute opacity-50 w-full h-[730px]"></div>
+
+                <div class="container relative text-white">
+                    <div class="md:w-3/5 py-60 flex flex-col justify-center items-start">
+                        <h1 class="text-4xl font-font-heading md:text-5xl font-bold">
+                            Welcome to Our Website
+                        </h1>
+
+                        <p class="mt-4 text-lg font-font-text text-color-border-ass md:text-xl">
+                            We are team of talented designers making websites with Bootstrap
+                        </p>
+                        <div class="mt-6 flex justify-between md:w-3/4 rounded-lg py-2 p-4 bg-white">
+                            <input type="text" placeholder="" 
+                            class="px-4 py-2 outline-none rounded-lg w-64 bg-white text-gray-800">
+
+                            <button class="px-4 py-2 bg-red-500 rounded-lg hover:bg-red-600 text-white">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Logo Section -->
+
+       <section>
+           <div class="container bg-white">
+              <div class="flex gap-32 justify-between items-center">
+                    <div class="">
+                       <img src="./img/client (1).png" class="hover:grayscale-0 duration-200 grayscale" alt="">
+                    </div>
+                    <div>
+                      <img src="./img/client (2).png" class="hover:grayscale-0 duration-200 grayscale" alt="">
+                    </div>
+
+                   <div>
+                       <img src="./img/client (3).png" class="hover:grayscale-0 duration-200 grayscale" alt="">
+                    </div>
+
+                    <div>
+                       <img src="./img/client (4).png" class="hover:grayscale-0 duration-200 grayscale" alt="">
+                    </div>
+
+                    <div>
+                       <img src="./img/client (5).png" class="hover:grayscale-0 duration-200 grayscale" alt="">
+                    </div>
+
+                    <div>
+                      <img src="./img/client (6).png" class="hover:grayscale-0 duration-200 grayscale" alt="">
+                    </div>
+
+              </div>
+           </div>
+       </section>
+    </main>
+
+    <!-- <section>
+        <div class="container grid grid-cols-4 gap-4 grid-rows-4">
+            <div class="w-52 h-52 bg-slate-400"></div>
+            <div class="w-70 h-52 bg-slate-400"></div>
+            <div class="w-52 h-52 bg-slate-400"></div>
+            <div class="w-52 h-52 bg-slate-400"></div>
+            <div class="w-52 h-52 bg-slate-400"></div>
+            <div class="w-52 h-52 bg-slate-400"></div>
+            <div class="w-52 h-52 bg-slate-400"></div>
+            <div class="w-52 h-52 bg-slate-400"></div>
+            <div class="w-52 h-52 bg-slate-400"></div>
+        </div>
+    </section> -->
+</body>
+</html>

@@ -9,15 +9,15 @@
 </head>
 <body class="">
     <!-- Heading -->
-    <header class="sticky top-0 bg-white z-50">
-        <nav class="px-20 flex justify-between items-center">
-            <div class="text-black py-8">
+    <header class="">
+        <nav class="relative px-3 z-10 bg-transparent flex justify-between items-center">
+            <div class="text-white py-8">
                 <a href="#home" class="font-font-heading text-2xl font-semibold">
                     Append <span class="text-color-primary">.</span>
                 </a>
             </div>
             <div class="">
-                <ul class="hidden text-black font-font-nav font-normal text-base lg:flex items-center space-x-6">
+                <ul class="hidden text-white font-font-nav font-normal text-base lg:flex items-center space-x-6">
                     <li><a class="hover:text-color-nav ease-in duration-200" href="#home">Home</a></li>
                     <li><a class="hover:text-color-nav ease-in duration-200" href="#home">About</a></li>
                     <li><a class="hover:text-color-nav ease-in duration-200" href="#home">Servies</a></li>
@@ -35,7 +35,7 @@
                 </ul>
             </div>
 
-            <div class="px-6 py-2 duration-200 rounded bg-color-primary hover:bg-opacity-75">
+            <div class="hidden lg:block px-6 py-2 duration-200 rounded bg-color-primary hover:bg-opacity-75">
                 <button class="text-white">
                     Get Started
                 </button>
@@ -43,7 +43,7 @@
 
             <!-- Mobile Menu -->
             <div id="menuber" class="lg:hidden cursor-pointer z-50">
-                <i class="fa-solid fa-bars text-xl"></i>
+                <i class="fa-solid fa-bars text-xl text-white"></i>
             </div>
 
             <div id="menu" class="hidden bg-white rounded-xl shadow-lg h-[600px] absolute top-20 inset-0">
@@ -65,62 +65,73 @@
                     <li><a id="hlink" class="hover:text-color-nav ease-in duration-200" href="#home">Contact</a></li>
                 </ul>
             </div>
-
         </nav>
     </header>
 
     <main>
-       <!-- Hero Section -->
+        
+        <!-- Hero Section -->
 
-       <section class="relative">
-            <img src="./img/hero-bg.jpg" class=" h-[730px] w-full object-cover" alt="">
-            <div class="bg-black absolute top-0 z-30 opacity-25 w-full h-[730px]"></div>
-            <div>
-                <!-- <div class="absolute z-60">
-                    <p>Welcome to Our Website</p>
-                    <p>We are team of talented designers making websites with Bootstrap</p>
-                    <div>
-                        <button>
-                            <div class="px-6 py-2 duration-200 rounded bg-color-primary hover:bg-opacity-75">
-                                <button class="text-white">
-                                    Get Started
+        <section>   
+            <div class="">
+                <!-- Img -->
+                <div class="min-h-[630px] flex justify-center items-center">
+                    <img src="./img/hero-bg.jpg" class="absolute top-0 inset-0 bg-cover h-[730px] w-full object-cover" alt="">
+                    <div class="bg-black absolute top-0 opacity-50 w-full h-[730px]"></div>
+
+                    <!-- Text -->
+
+                    <div class="container relative  text-white">
+                        <div class="md:w-3/5  flex flex-col justify-center items-start">
+                            <h1 class="text-4xl font-font-heading md:text-5xl font-bold">
+                                Welcome to Our Website
+                            </h1>
+    
+                            <p class="mt-4 text-lg font-font-text text-color-border-ass md:text-xl">
+                                We are team of talented designers making websites with Bootstrap
+                            </p>
+                            <div class="mt-6 flex justify-between lg:w-3/4 rounded-lg py-2 p-4 bg-white">
+                                <input type="text" placeholder="" 
+                                class="px-4 py-2 outline-none rounded-lg w-64 bg-white text-gray-800">
+    
+                                <button class="px-4 py-2 bg-red-500 rounded-lg hover:bg-red-600 text-white">
+                                    Subscribe
                                 </button>
                             </div>
-                        </button>
+                        </div>
                     </div>
-                </div> -->
+                </div>
             </div>
-       </section>
+        </section>
 
        <!-- Logo Section -->
 
        <section>
-           <div class="container py-8 bg-white">
-              <div class="flex gap-32 justify-between items-center">
-                    <div class="">
+           <div class="container bg-white">
+               <div class="flex flex-wrap lg:justify-between items-center">
+                    <div class="lg:w-1/6 p-12 md:w-1/4">
                        <img src="./img/client (1).png" class="hover:grayscale-0 duration-200 grayscale" alt="">
                     </div>
-                    <div>
-                      <img src="./img/client (2).png" class="hover:grayscale-0 duration-200 grayscale" alt="">
-                    </div>
+                    <div class="lg:w-1/6 p-12 md:w-1/4">
+                        <img src="./img/client (2).png" class="hover:grayscale-0 duration-200 grayscale" alt="">
+                     </div>
 
-                   <div>
+                   <div class="lg:w-1/6 p-12 md:w-1/4">
                        <img src="./img/client (3).png" class="hover:grayscale-0 duration-200 grayscale" alt="">
                     </div>
 
-                    <div>
+                    <div class="lg:w-1/6 p-12 md:w-1/4">
                        <img src="./img/client (4).png" class="hover:grayscale-0 duration-200 grayscale" alt="">
                     </div>
 
-                    <div>
+                    <div class="lg:w-1/6 p-12 md:w-1/4">
                        <img src="./img/client (5).png" class="hover:grayscale-0 duration-200 grayscale" alt="">
                     </div>
 
-                    <div>
-                      <img src="./img/client (6).png" class="hover:grayscale-0 duration-200 grayscale" alt="">
+                    <div class="lg:w-1/6 p-12 md:w-1/4">
+                       <img src="./img/client (6).png" class="hover:grayscale-0 duration-200 grayscale" alt="">
                     </div>
-
-              </div>
+               </div>
            </div>
        </section>
 
@@ -132,12 +143,14 @@
                     <div class="lg:w-2/5">
 
                         <div class="">
-                            <button class="text-color-primary px-6 py-2 duration-200 rounded bg-color-secndary hover:bg-opacity-75">
+                            <button class="text-color-primary px-6 py-2 
+                                duration-200 rounded bg-color-secndary font-medium font-font-heading hover:bg-opacity-75">
                                 About us
                             </button>
                         </div>
                         <p class="font-font-heading font-bold text-3xl mt-3 text-black">Ducimus rerum libero reprehenderit cumque</p>
-                        <p class="text-base text-color-pra mt-2 font-font-text">Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor cumque alias maxime.
+                        <p class="text-base text-color-pra mt-2 font-font-text">
+                           Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor cumque alias maxime.
                            Enim reiciendis minus et rerum hic non. Dicta quas cum quia maiores iure. 
                            Quidem nulla qui assumenda incidunt voluptatem tempora deleniti soluta.
                         </p>
@@ -148,49 +161,54 @@
                         </div>
                     </div>
 
-                    <div class="lg:w-3/5 grid lg:grid-cols-2 gap-6">
-                        <div class="p-8 bg-white shadow-lg rounded-lg">
-                            <div class="mt-4 size-20 rounded-full text-color-primary hover:text-white flex justify-center items-center
-                                bg-color-secndary hover:bg-color-primary duration-300">
-                                <i class="fa-solid fa-building text-3xl"></i>
+                    <div class="lg:w-3/5 flex flex-col md:flex-row gap-6">
+                        
+                        <div class="flex flex-col md:mt-10 gap-6">
+                            <div class=" p-8 bg-white shadow-2xl rounded-lg">
+                                <div class="mt-4 size-20 rounded-full text-color-primary hover:text-white flex justify-center items-center
+                                    bg-color-secndary hover:bg-color-primary duration-300">
+                                    <i class="fa-solid fa-building text-3xl"></i>
+                                </div>
+                                <p class="font-font-heading font-bold mt-6 text-3xl">Eius provident</p>
+                                <p class="text-base text-color-pra mt-4 font-font-text">Magni repellendus vel ullam hic officia accusantium 
+                                    ipsa dolor omnis dolor voluptatem
+                                </p>
                             </div>
-                            <p class="font-font-heading font-bold mt-6 text-3xl">Eius provident</p>
-                            <p class="text-base text-color-pra mt-4 font-font-text">Magni repellendus vel ullam hic officia accusantium 
-                                ipsa dolor omnis dolor voluptatem
-                            </p>
+    
+                            <div class="p-8 bg-white shadow-2xl rounded-lg">
+                                <div class="mt-4 size-20 rounded-full text-color-primary hover:text-white flex justify-center items-center
+                                    bg-color-secndary hover:bg-color-primary duration-300">
+                                    <i class="fa-solid fa-building text-3xl"></i>
+                                </div>
+                                <p class="font-font-heading font-bold mt-6 text-3xl">Eius provident</p>
+                                <p class="text-base text-color-pra mt-4 font-font-text">Magni repellendus vel ullam hic officia accusantium 
+                                    ipsa dolor omnis dolor voluptatem
+                                </p>
+                            </div>
                         </div>
 
-                        <div class="p-8 bg-white shadow-lg rounded-lg">
-                            <div class="mt-4 size-20 rounded-full text-color-primary hover:text-white flex justify-center items-center
-                                bg-color-secndary hover:bg-color-primary duration-300">
-                                <i class="fa-solid fa-building text-3xl"></i>
+                        <div class="flex flex-col gap-6">
+                            <div class="p-8 bg-white shadow-2xl rounded-lg">
+                                <div class="mt-4 size-20 rounded-full text-color-primary hover:text-white flex justify-center items-center
+                                    bg-color-secndary hover:bg-color-primary duration-300">
+                                    <i class="fa-solid fa-building text-3xl"></i>
+                                </div>
+                                <p class="font-font-heading font-bold mt-6 text-3xl">Eius provident</p>
+                                <p class="text-base text-color-pra mt-4 font-font-text">Magni repellendus vel ullam hic officia accusantium 
+                                    ipsa dolor omnis dolor voluptatem
+                                </p>
                             </div>
-                            <p class="font-font-heading font-bold mt-6 text-3xl">Eius provident</p>
-                            <p class="text-base text-color-pra mt-4 font-font-text">Magni repellendus vel ullam hic officia accusantium 
-                                ipsa dolor omnis dolor voluptatem
-                            </p>
-                        </div>
-
-                        <div class="p-8 bg-white shadow-lg rounded-lg">
-                            <div class="mt-4 size-20 rounded-full text-color-primary hover:text-white flex justify-center items-center
-                                bg-color-secndary hover:bg-color-primary duration-300">
-                                <i class="fa-solid fa-building text-3xl"></i>
+    
+                            <div class="p-8 bg-white shadow-2xl rounded-lg">
+                                <div class="mt-4 size-20 rounded-full text-color-primary hover:text-white flex justify-center items-center
+                                    bg-color-secndary hover:bg-color-primary duration-300">
+                                    <i class="fa-solid fa-building text-3xl"></i>
+                                </div>
+                                <p class="font-font-heading font-bold mt-6 text-3xl">Eius provident</p>
+                                <p class="text-base text-color-pra mt-4 font-font-text">Magni repellendus vel ullam hic officia accusantium 
+                                    ipsa dolor omnis dolor voluptatem
+                                </p>
                             </div>
-                            <p class="font-font-heading font-bold mt-6 text-3xl">Eius provident</p>
-                            <p class="text-base text-color-pra mt-4 font-font-text">Magni repellendus vel ullam hic officia accusantium 
-                                ipsa dolor omnis dolor voluptatem
-                            </p>
-                        </div>
-
-                        <div class="p-8 bg-white shadow-lg rounded-lg">
-                            <div class="mt-4 size-20 rounded-full text-color-primary hover:text-white flex justify-center items-center
-                                bg-color-secndary hover:bg-color-primary duration-300">
-                                <i class="fa-solid fa-building text-3xl"></i>
-                            </div>
-                            <p class="font-font-heading font-bold mt-6 text-3xl">Eius provident</p>
-                            <p class="text-base text-color-pra mt-4 font-font-text">Magni repellendus vel ullam hic officia accusantium 
-                                ipsa dolor omnis dolor voluptatem
-                            </p>
                         </div>
                     </div>
                </div>
@@ -203,7 +221,7 @@
             <div style="background-image: url(./img/stats-bg.jpg);" 
                 class="relative h-[400px] flex justify-center items-center w-full bg-cover bg-center">
                 <div class="w-full absolute z-10 h-[400px] bg-black opacity-50"></div>
-                <div class="absolute flex z-20 gap-60 items-center">
+                <div class="absolute flex flex-col md:flex-row z-20 md:gap-32 lg:gap-60 items-center">
                     <div class="">
                         <p class="text-white text-5xl font-bold font-font-text">232</p>
                         <p class="mt-3 text-color-ass font-bold font-font-heading text-base">Clients</p>
@@ -238,11 +256,13 @@
                         <p class="font-font-heading text-3xl font-bold">Services</p>
                         <div class="w-12 h-[2px] bg-color-primary"></div>
                     </div>
-                    <p class="text-base text-color-pra mt-2">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> 
+                    <p class="text-base text-color-pra mt-2">
+                        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                    </p> 
                 </div>
 
                 <div class="mt-16 flex flex-col">
-                    <div class="flex gap-6">
+                    <div class="flex flex-col lg:flex-row gap-6">
                         <!-- Card-1 -->
                         <div class="lg:w-1/2 flex flex-col gap-6">
                             <div class="flex justify-center items-center gap-2">
@@ -253,7 +273,7 @@
                             <div class="flex gap-9 py-4">
                                 <div class="relative">
                                     <div class="relative"><i class="fa-solid fa-briefcase text-6xl text-color-pra"></i></div>
-                                    <div class="size-8 rounded-full bg-color-orange-ass absolute -z-10 bottom-5 -right-2"></div>
+                                    <div class="size-8 rounded-full bg-color-orange-ass absolute -z-10 bottom-10 lg:bottom-5 md:bottom-5 -right-2"></div>
                                 </div>
         
                                 <div>
@@ -279,14 +299,14 @@
                                 <div class="w-full h-[2px] bg-color-border-ass"></div>
                             </div>
     
-                            <div class="flex gap-9 py-4">
+                            <div class="flex gap-9 lg:py-4">
                                 <div class="relative">
-                                    <div class="relative"><i class="fa-solid fa-briefcase text-6xl text-color-pra"></i></div>
-                                    <div class="size-8 rounded-full bg-color-orange-ass absolute -z-10 bottom-5 -right-2"></div>
+                                    <div class=""><i class="fa-solid fa-list-check text-6xl text-color-pra"></i></div>
+                                    <div class="size-8 rounded-full bg-color-orange-ass absolute -z-10 bottom-10 lg:bottom-5 md:bottom-5 -right-2"></div>
                                 </div>
         
                                 <div>
-                                    <p class="text-lg font-bold font-font-heading">Lorem Ipsum</p>
+                                    <p class="text-lg font-bold font-font-heading">Dolor Setama</p>
                                     <p class="text-base font-font-text text-color-pra mt-3">
                                         Voluptatum deleniti atque corrupti quos dolores et quas molestias
                                         excepturi sint occaecati cupiditate non provident
@@ -301,7 +321,7 @@
                         </div>
                     </div>
 
-                    <div class="flex gap-6">
+                    <div class="flex flex-col lg:flex-row gap-6">
                         <!-- Card-3 -->
                         <div class="lg:w-1/2 flex flex-col gap-6">
                             <div class="flex justify-center items-center gap-2">
@@ -311,8 +331,8 @@
     
                             <div class="flex gap-9 py-4">
                                 <div class="relative">
-                                    <div class="relative"><i class="fa-solid fa-briefcase text-6xl text-color-pra"></i></div>
-                                    <div class="size-8 rounded-full bg-color-orange-ass absolute -z-10 bottom-5 -right-2"></div>
+                                    <div class="relative"><i class="fa-solid fa-chart-simple text-6xl text-color-pra"></i></div>
+                                    <div class="size-8 rounded-full bg-color-orange-ass absolute -z-10 bottom-10 lg:bottom-5 md:bottom-5 -right-2"></div>
                                 </div>
         
                                 <div>
@@ -340,8 +360,8 @@
     
                             <div class="flex gap-9 py-4">
                                 <div class="relative">
-                                    <div class="relative"><i class="fa-solid fa-briefcase text-6xl text-color-pra"></i></div>
-                                    <div class="size-8 rounded-full bg-color-orange-ass absolute -z-10 bottom-5 -right-2"></div>
+                                    <div class="relative"><i class="fa-solid fa-binoculars text-6xl text-color-pra"></i></div>
+                                    <div class="size-8 rounded-full bg-color-orange-ass absolute -z-10 bottom-10 lg:bottom-5 md:bottom-5 -right-2"></div>
                                 </div>
         
                                 <div>
@@ -360,7 +380,7 @@
                         </div>
                     </div>
 
-                    <div class="flex gap-6">
+                    <div class="flex flex-col lg:flex-row gap-6">
                         <!-- Card-5 -->
                         <div class="lg:w-1/2 flex flex-col gap-6">
                             <div class="flex justify-center items-center gap-2">
@@ -370,8 +390,8 @@
     
                             <div class="flex gap-9 py-4">
                                 <div class="relative">
-                                    <div class="relative"><i class="fa-solid fa-briefcase text-6xl text-color-pra"></i></div>
-                                    <div class="size-8 rounded-full bg-color-orange-ass absolute -z-10 bottom-5 -right-2"></div>
+                                    <div class="relative"><i class="fa-solid fa-sun text-6xl text-color-pra"></i></div>
+                                    <div class="size-8 rounded-full bg-color-orange-ass absolute -z-10 bottom-10 lg:bottom-5 md:bottom-5 -right-2"></div>
                                 </div>
         
                                 <div>
@@ -394,8 +414,8 @@
     
                             <div class="flex gap-9 py-4">
                                 <div class="relative">
-                                    <div class="relative"><i class="fa-solid fa-briefcase text-6xl text-color-pra"></i></div>
-                                    <div class="size-8 rounded-full bg-color-orange-ass absolute -z-10 bottom-5 -right-2"></div>
+                                    <div class="relative"><i class="fa-solid fa-calendar-week text-6xl text-color-pra"></i></div>
+                                    <div class="size-8 rounded-full bg-color-orange-ass absolute -z-10 bottom-10 lg:bottom-5 md:bottom-5 -right-2"></div>
                                 </div>
         
                                 <div>
@@ -457,7 +477,7 @@
                             </div>
                             <div>
                                 <img src="./img/features-light-2.jpg" 
-                                class="w-[500px] h-[350px] absolute -z-10 right-0 border-8 border-white shadow-2xl" alt="">
+                                class="w-[500px] h-[350px] absolute -z-10 -right-24 lg:right-0 border-8 border-white shadow-2xl" alt="">
                             </div>
                         </div>
                     </div>
@@ -465,7 +485,7 @@
 
                     <!-- Section-2 -->
 
-                    <div class="flex flex-col lg:flex-row justify-between items-center">
+                    <div class="flex lg:gap-0 gap-6 flex-col lg:flex-row justify-between items-center">
 
                         <div class="lg:w-1/2">
                             <div class="">
@@ -550,41 +570,50 @@
                         </div>
                     </div>
 
-                    <div class="mt-10 grid lg:grid-cols-3 gap-6">
-                        <div>
-                            <img src="./img/masonry-portfolio-1.jpg" class="w-full h-auto overflow-hidden" alt="">
-                        </div>
+                    <div class="mt-10 flex-col lg:flex-row flex gap-6">
 
-                        <div class="">
-                            <img src="./img/masonry-portfolio-2.jpg" class="w-full h-auto overflow-hidden" alt="">
+                        <div class="flex flex-col gap-6 lg:w-1/3">
+                            <div class="row-span- col-span-1">
+                                <img src="./img/masonry-portfolio-1.jpg" class="w-full h-auto overflow-hidden" alt="">
+                            </div>
+    
+                            <div class="row-span-1">
+                                <img src="./img/masonry-portfolio-6.jpg" class="w-full h-auto overflow-hidden" alt="">
+                            </div>
                         </div>
-
-                        <div>
-                            <img src="./img/masonry-portfolio-3.jpg" class="w-full h-auto overflow-hidden" alt="">
+                        
+                        <div class="lg:w-1/3 flex flex-col gap-6">
+    
+                            <div class="row-span-1 col-span-1">
+                                <img src="./img/masonry-portfolio-2.jpg" class="w-full h-auto overflow-hidden" alt="">
+                            </div>
+    
+                            <div class="row-span-1 col-span-1">
+                                <img src="./img/masonry-portfolio-5.jpg" class="w-full h-auto overflow-hidden" alt="">
+                            </div>
+    
+                            <div>
+                                <img src="./img/masonry-portfolio-9.jpg" class="w-full h-auto overflow-hidden" alt="">
+                            </div>
                         </div>
-
-                        <div>
-                            <img src="./img/masonry-portfolio-6.jpg" class="w-full h-auto overflow-hidden" alt="">
-                        </div>
-
-                        <div class="">
-                            <img src="./img/masonry-portfolio-5.jpg" class="w-full h-auto overflow-hidden" alt="">
-                        </div>
-
-                        <div>
-                            <img src="./img/masonry-portfolio-4.jpg" class="w-full h-auto overflow-hidden" alt="">
-                        </div>
-
-                        <div>
-                            <img src="./img/masonry-portfolio-7.jpg" class="w-full h-auto overflow-hidden" alt="">
-                        </div>
-
-                        <div>
-                            <img src="./img/masonry-portfolio-8.jpg" class="w-full h-auto overflow-hidden" alt="">
-                        </div>
-
-                        <div>
-                            <img src="./img/masonry-portfolio-9.jpg" class="w-full h-auto overflow-hidden" alt="">
+    
+                        <div class="lg:w-1/3 flex flex-col gap-6">
+    
+                            <div class="row-span-1">
+                                <img src="./img/masonry-portfolio-3.jpg" class="w-full h-auto overflow-hidden" alt="">
+                            </div>
+    
+                            <div>
+                                <img src="./img/masonry-portfolio-4.jpg" class="w-full h-auto overflow-hidden" alt="">
+                            </div>
+    
+                            <div>
+                                <img src="./img/masonry-portfolio-7.jpg" class="w-full h-auto overflow-hidden" alt="">
+                            </div>
+    
+                            <div>
+                                <img src="./img/masonry-portfolio-8.jpg" class="w-full h-auto overflow-hidden" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -681,7 +710,7 @@
                             <div class="mt-4 relative">
                                 <span class="before:content-['$'] before:absolute before:text-3xl before:text-color-primary
                                     before:top-0 before:-left-5 font-font-heading before:font-bold">
-                                    <span class="text-5xl text-color-primary font-font-heading font-bold">0</span>
+                                    <span class="text-5xl text-color-primary font-font-heading font-bold">29</span>
                                     <span class="text-lg font-font-heading text-color-ass">/month</span>
                                 </span>
                             </div>
@@ -743,7 +772,7 @@
                             <div class="mt-4 relative">
                                 <span class="before:content-['$'] before:absolute before:text-3xl before:text-color-primary
                                     before:top-0 before:-left-5 font-font-heading before:font-bold">
-                                    <span class="text-5xl text-color-primary font-font-heading font-bold">0</span>
+                                    <span class="text-5xl text-color-primary font-font-heading font-bold">49</span>
                                     <span class="text-lg font-font-heading text-color-ass">/month</span>
                                 </span>
                             </div>
@@ -964,7 +993,7 @@
                 class="relative h-80 flex justify-center items-center w-full bg-fixed bg-cover bg-center">
                 <div class="w-full absolute z-10 h-80 bg-black opacity-50"></div>
                 <div class="absolute flex z-20 gap-60 justify-center items-center">
-                    <div class="text-center w-3/5 flex flex-col text-white justify-center items-center">
+                    <div class="container text-center flex flex-col text-white justify-center items-center">
                         <h1 class="text-3xl font-bold font-font-heading">Call To Action</h1>
                         <p class="mt-3 font-font-text">
                             uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
@@ -1147,8 +1176,8 @@
                     </p> 
                 </div>
 
-                <div class="mt-16 flex gap-6">
-                    <div class="md:w-1/2">
+                <div class="mt-16 flex flex-col lg:flex-row gap-6">
+                    <div class="lg:w-1/2">
                         <div class="grid gap-6 md:grid-cols-2">
                             <div class="bg-color-white-ass p-8">
                                 <div>
@@ -1193,21 +1222,21 @@
                             <div class="flex gap-6">
                                 <input type="text" placeholder="Your Name"
                                   class="md:w-1/2 py-3 bg-color-white-ass border 
-                                   outline-none hover:border-color-primary duration-200
+                                   outline-none active:border-color-primary duration-200
                                    indent-4 text-sm font-font-text border-color-border-ass">
                                 <input type="email" placeholder="Your Email"
                                  class="md:w-1/2 py-3 bg-color-white-ass border 
-                                 outline-none hover:border-color-primary duration-200
+                                 outline-none active:border-color-primary duration-200
                                  indent-4 text-sm font-font-text border-color-border-ass">
                             </div>
                             <input type="text" placeholder="Subject"
                             class="py-3 bg-color-white-ass border 
-                            outline-none hover:border-color-primary duration-200
+                            outline-none active:border-color-primary duration-200
                             indent-4 text-sm font-font-text border-color-border-ass">
 
                             <textarea name="" rows="7" id="" placeholder="Message"
                             class="bg-color-white-ass border py-4
-                            outline-none hover:border-color-primary duration-200
+                            outline-none active:border-color-primary duration-200
                             indent-4 text-sm font-font-text border-color-border-ass"></textarea>
 
                             <div class="flex mt-4 justify-center items-center">
@@ -1226,7 +1255,7 @@
 
         <footer class="bg-color-white-ass">
             <div class="container py-16">
-                <div class="flex gap-8">
+                <div class="flex flex-col lg:flex-row gap-8">
                     <div class="lg:w-2/5">
                         <h1 class="text-3xl font-bold font-font-heading">Append</h1>
                         <p class="text-sm text-color-pra font-font-heading mt-5">
@@ -1260,7 +1289,7 @@
                     <div class="lg:w-1/2 flex justify-between ">
                         <div>
                             <h1 class="font-font-heading font-bold">Useful Links</h1>
-                            <div class="flex mt-5 flex-col gap-3 font-font-text text-color-pra ">
+                            <div class="flex text-sm mt-5 flex-col gap-3 font-font-text text-color-pra ">
                                 <p class="hover:text-color-primary duration-200">Home</p>
                                 <p class="hover:text-color-primary duration-200">About us</p>
                                 <p class="hover:text-color-primary duration-200">Servies</p>
@@ -1270,24 +1299,28 @@
                         </div>
 
                         <div>
-                            <h1 class="font-font-heading font-bold">Useful Links</h1>
-                            <div class="flex mt-5 flex-col gap-3 font-font-text text-color-pra ">
-                                <p class="hover:text-color-primary duration-200">Home</p>
-                                <p class="hover:text-color-primary duration-200">About us</p>
-                                <p class="hover:text-color-primary duration-200">Servies</p>
-                                <p class="hover:text-color-primary duration-200">Terms of service</p>
-                                <p class="hover:text-color-primary duration-200">Privacy policy</p>
+                            <h1 class="font-font-heading font-bold">Our Services</h1>
+                            <div class="flex mt-5 text-sm flex-col gap-3 font-font-text text-color-pra ">
+                                <p class="hover:text-color-primary duration-200">Web Design</p>
+                                <p class="hover:text-color-primary duration-200">Web Development</p>
+                                <p class="hover:text-color-primary duration-200">Product Management</p>
+                                <p class="hover:text-color-primary duration-200">Marketing</p>
+                                <p class="hover:text-color-primary duration-200">Graphic Design</p>
                             </div>
                         </div>
 
                         <div>
-                            <h1 class="font-font-heading font-bold">Useful Links</h1>
-                            <div class="flex mt-5 flex-col gap-3 font-font-text text-color-pra ">
-                                <p class="hover:text-color-primary duration-200">Home</p>
-                                <p class="hover:text-color-primary duration-200">About us</p>
-                                <p class="hover:text-color-primary duration-200">Servies</p>
-                                <p class="hover:text-color-primary duration-200">Terms of service</p>
-                                <p class="hover:text-color-primary duration-200">Privacy policy</p>
+                            <h1 class="font-font-heading font-bold">Contact Us</h1>
+                            <div class="flex mt-5 text-sm flex-col gap-4 font-font-text text-color-pra ">
+                                <div>
+                                    <p class="hover:text-color-primary duration-200">A108 Adam Street</p>
+                                    <p class="hover:text-color-primary duration-200 mt-3">New York, NY 535022</p>
+                                    <p class="hover:text-color-primary duration-200 mt-3">United States</p>
+                                </div>
+                                <div>
+                                    <p class="hover:text-color-primary duration-200"><b class="mr-1">Phone:</b>+1 5589 55488 55</p>
+                                    <p class="hover:text-color-primary duration-200 mt-2"><b class="mr-1">Email:</b>info@example.com</p>
+                                </div>
                             </div>
                         </div>
                     </div>
