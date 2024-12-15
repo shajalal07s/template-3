@@ -1,8 +1,8 @@
 
-# Tempalete
+# Tempalete-03
 
 ## Overview
-This is a template, built to showcase my projects, skills, and experiences as a designer. It includes various sections like About Me, Work, Projects, and Contact Information.
+This is a tempalate, built to showcase my projects, skills, and experiences as a designer. It includes various sections like About Me, Work, Projects, and Contact Information.
 
 The website is fully responsive and built with HTML, Tailwind CSS, and JavaScript to ensure seamless performance on both desktop and mobile devices.
 
@@ -32,7 +32,7 @@ You need to have the following installed on your machine:
 
 ## Deploy
    
-   
+https://spectacular-macaron-230c94.netlify.app/  
 
 ## About Me
 
